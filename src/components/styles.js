@@ -122,6 +122,7 @@ export const style = {
         fontWeight: 700,
         fontSize: '20px',
         cursor: 'pointer',
+        textDecoration: 'none',
 
         '@media (max-width: 1000px)': {
            display: 'none'
@@ -143,8 +144,7 @@ export const style = {
         fontWeight: 700,
         fontSize: '20px',
         cursor: 'pointer',
-        marginBottom: '200px',
-        marginLeft: '10px'
+        textDecoration: 'none'
     },
 
     mobBtnContainer: {
@@ -155,6 +155,7 @@ export const style = {
             width: '100%',
             display: 'block',
             marginTop: '-250px',
+            paddingBottom: '200px',
         },
     }
 }
