@@ -1,161 +1,190 @@
+import background from "../images/main.png";
+import historyBackground from "../images/history_background.png";
+import historyCarouselBackground from "../images/history_carousel_background.png";
+
 export const style = {
     mainComponent: {
+        width: '100%'
+    },
+
+    mainSection: {
         width: '100%',
-        background: '#DDDDDD',
+        height: '820px',
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'auto',
+    },
+
+    mainHeader: {
+        width: '100%',
         display: 'flex',
-
-        '@media (max-width: 1000px)': {
-            display: 'block',
-        },
     },
 
-    eventContainer: {
-        width: '50%',
-        padding: '0px 100px',
-        textAlign: 'center',
-
-        '@media (max-width: 1000px)': {
-            width: '100%',
-            padding: '0px',
-        },
-    },
-
-    img: {
-        width: '440px',
-        height: '775.69px',
-        objectFit: 'contain',
-
-        '@media (max-width: 1000px)': {
-            width: '440px',
-            height: '775.69px',
-        },
-    },
-
-    headlineContainer: {
-        width: '50%',
-        padding: '200px 50px',
-        textAlign: 'center',
-
-        '@media (max-width: 1000px)': {
-            width: '100%',
-            padding: '0px',
-            paddingBottom: '250px',
-        },
-    },
-
-    mobTextContainer: {
-        // width: '573.91px',
-        height: '192px',
-        fontFamily: 'Helvetica',
-        fontWeight: 700,
-        fontSize: '64px',
-        lineHeight: '64px',
-        textAlign: 'center',
-        color: '#240D57',
-        position: 'relative',
-        marginRight: '100px',
-        display: 'none',
-
-        '@media (max-width: 1000px)': {
-            marginRight: '0px',
-            padding: '100px 0px',
-            display: 'block'
-        },
-    },
-
-    textContainer: {
-        // width: '573.91px',
-        height: '192px',
-        fontFamily: 'Helvetica',
-        fontWeight: 700,
-        fontSize: '64px',
-        lineHeight: '64px',
-        textAlign: 'right',
-        color: '#240D57',
-        position: 'relative',
-        marginRight: '100px',
-
-        '@media (max-width: 1000px)': {
-            marginRight: '50px',
-            display: 'none'
-        },
-    },
-
-    snapchat: {
-        background: "-webkit-linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent"
-    },
-
-    tagline: {
-        fontfamily: 'Helvetica',
-        fontStyle: 'normal',
-        fontWeight: 300,
-        fontSize: '24px',
-        lineHeight: '28px',
-        textAlign: 'right',
-
-        '@media (max-width: 1000px)': {
-            textAlign: 'center',
-        },
-    },
-
-    btn: {
+    scrollHeader: {
+        width: '100%',
         display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: '16px',
-        gap: '10px',
+        position: 'fixed',
+        top: 0,
+        background: '#fff',
+        zIndex: 99
+    },
+
+    logoContainer: {
+        width: '30%',
+        textAlign: 'center',
+        padding: 20
+    },
+
+    linksContainer: {
+        width: '70%',
+        textAlign: 'right',
+        padding: 20,
+        paddingRight: 50,
+        paddingTop: 30
+    },
+
+    link: {
+        textDecoration: 'underline',
+        fontWeight: 'bolder',
+        color: '#fff'
+    },
+
+    scrollLink: {
+        textDecoration: 'underline',
+        fontWeight: 'bolder',
+        color: '#414f6b'
+    },
+
+    historySection: {
+        width: '100%'
+    },
+
+    historyContentSection: {
+        width: '100%',
+        height: '710px',
+        backgroundImage: `url(${historyBackground})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'auto',
+    },
+
+    historyNumber: {
+        margin: '50px 200px', marginBottom: 0,
+
+        '@media (max-width: 1000px)': {
+            margin: '50px',
+            marginBottom: 0
+        },
+    },
+
+    climbNumber: {
+        margin: '10px 200px', marginBottom: 0,
+
+        '@media (max-width: 1000px)': {
+            margin: '30px',
+            marginBottom: 0
+        },
+    },
+
+    historyCarouselContainer: {
+        width: '100%',
+        height: '200px',
+        backgroundImage: `url(${ historyCarouselBackground})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'auto',
+        padding: '10px 0px',
+        position: 'relative'
+    },
+
+    carouselStyle: {
+        width: '15%',
         position: 'absolute',
-        width: '320px',
-        height: '55px',
-        right: '0px',
-        top: '300px',
-        background: '-webkit-linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%)',
-        borderRadius: '10px',
-        color: '#fff',
-        border: 'none',
-        outline: 'none',
-        fontFamily: 'Helvetica',
-        fontStyle: 'normal',
-        fontWeight: 700,
-        fontSize: '20px',
-        cursor: 'pointer',
-        textDecoration: 'none',
+        left: '40%',
+        right: '40%',
+
+        '@media (max-width: 1000px)': {
+            width: '40%',
+            left: '30%',
+            right: '30%',
+        },
+    },
+
+    climbSection: {
+        width: '100%',
+        display: 'flex',
+
+        '@media (max-width: 1000px)': {
+            display: 'inline',
+        },
+    },
+
+    numberSection: {
+        width: '40%',
+
+        '@media (max-width: 1000px)': {
+            width: '100%',
+            textAlign: 'center'
+        },
+    },
+
+    climbContent: {
+        width: '60%',
+        padding: '50px 10px',
+
+        '@media (max-width: 1000px)': {
+            width: '100%',
+            textAlign: 'center',
+            padding: '50px 0px'
+        },
+    },
+
+    tabs: {
+        display: 'block',
 
         '@media (max-width: 1000px)': {
            display: 'none'
         },
     },
 
-    mobBtn: {
-        padding: '16px',
-        gap: '10px',
-        width: '320px',
-        height: '55px',
-        background: '-webkit-linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%)',
-        borderRadius: '10px',
-        color: '#fff',
-        border: 'none',
-        outline: 'none',
-        fontFamily: 'Helvetica',
-        fontStyle: 'normal',
-        fontWeight: 700,
-        fontSize: '20px',
-        cursor: 'pointer',
-        textDecoration: 'none'
+    accordion: {
+        display: 'none',
+        
+        '@media (max-width: 1000px)': {
+           display: 'block'
+        },
     },
 
-    mobBtnContainer: {
-        display: 'none',
+    footer: {
+        width: '100%',
+        display: 'flex',
+        background: '#414f6b',
 
         '@media (max-width: 1000px)': {
-            textAlign: 'center',
+            display: 'inline',
+            border: '1px solid black'
+         },
+    },
+
+    flogoContainer: {
+        width: '50%',
+        textAlign: 'center',
+        padding: 20,
+
+        '@media (max-width: 1000px)': {
             width: '100%',
-            display: 'block',
-            marginTop: '-250px',
-            paddingBottom: '200px',
-        },
+            padding: '20px 0px',
+            background: '#414f6b',
+         },
+    },
+
+    copyContainer: {
+        width: '50%',
+        textAlign: 'center',
+        padding: 20,
+
+        '@media (max-width: 1000px)': {
+            width: '100%',
+            padding: '20px 0px',
+            background: '#414f6b',
+         },
     }
 }
